@@ -1,13 +1,105 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f6ef;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.header-wrapper {
+  background: #ff742b;
+}
+.container {
+  padding: 0 1rem;
+}
+.header-wrapper ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+.header-wrapper li {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.header-wrapper ul li {
+  padding: 1rem 0;
+  margin-right: 2rem;
+}
+.header-wrapper li img {
+  width: 25px;
+  height: auto;
+}
+.news-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+.news-list li {
+  text-align: left;
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: 500;
+}
+.news-list .list-index {
+  font-size: 0.8rem;
+  color: #828282;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.news-list {
+  padding-top: 1rem;
+}
+.list:nth-child(even){
+  background-color: red;
+}
+.news-list li a {
+  color: #000;
+  text-decoration: none;
+}
+.title {
+  font-size: 1.2rem;
+}
+.news-list .title {
+  position: relative;
+  padding-left: 1rem;
+}
+.news-list .title::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  left: 0;
+  top: 10px;
+  background-repeat: no-repeat;
+  background-image: url("./images/grayarrow.gif");
+}
+.news-list .domain_name,
+.hours {
+  color: #828282;
+  font-size: 0.8rem;
+}
+.hours .author,
+.hide_link {
+  font-size: 0.8rem;
+}
+.news-list .domain_name:hover {
+  text-decoration: underline;
+}
+.more_button {
+  text-align: left;
+  padding: 2rem 2rem;
+  display: block;
+  color: #ff742b;
+  font-weight: 700;
+}
+.more_button{
+  cursor: pointer;
 }
